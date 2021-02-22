@@ -1,0 +1,53 @@
+{
+  "styledComponent": {
+    "prefix": "stc",
+    "body": [
+      "import styled from \"styled-components\"",
+      "const ${1:${TM_FILENAME_BASE}} = styled.${2:ElementType}`",
+      "\t${0}",
+      "`",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Styled Component boilerplate"
+  },
+  "styledComponentReact": {
+    "prefix": "stcr",
+    "body": [
+      "import styled from \"styled-components\"",
+      "const ${1:${TM_FILENAME_BASE}} = styled(${2:Component})`",
+      "\t${0}",
+      "`",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Styled Component boilerplate for styling a react component"
+  },
+  "styledComponentIAO": {
+    "prefix": "stcc",
+    "body": [
+      "import React from \"react\"",
+      "import styled from \"styled-components\"",
+      "const Styled${1:${TM_FILENAME_BASE}} = styled(${2:Component})`",
+      "\t/* ... */",
+      "`",
+      "const ${1:${TM_FILENAME_BASE}} = (props) => {",
+      "\treturn <Styled${1:${TM_FILENAME_BASE}}>${0}<Styled${1:${TM_FILENAME_BASE}}/>",
+      "}",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Styled Component boilerplate for styling a react component"
+  },
+  "styledComponentProp": {
+    "prefix": "stp",
+    "body": [
+      "${(props) => props.${1}}"
+    ],
+    "description": "Use a prop in a styled component"
+  },
+  "styledComponentPropDestructure": {
+    "prefix": "stpd",
+    "body": [
+      "${({${1:PropName}}) => ${1:PropName} }"
+    ],
+    "description": "Use a prop in a styled component via destructuring assignment"
+  }
+}
