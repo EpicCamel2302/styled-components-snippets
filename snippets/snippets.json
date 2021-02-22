@@ -21,8 +21,24 @@
     ],
     "description": "Styled Component boilerplate for styling a react component"
   },
-  "styledComponentReactComponent": {
+  "styledComponentHtmlReactComponent": {
     "prefix": "stcc",
+    "body": [
+      "import React from \"react\"",
+      "import styled from \"styled-components\"",
+      "const Styled${1:${TM_FILENAME_BASE}} = styled.${2:Element}`",
+      "\t/* ... */",
+      "`",
+      "const ${1:${TM_FILENAME_BASE}} = (props) => {",
+      "\treturn <Styled${1:${TM_FILENAME_BASE}} {...props}>${0:{/* ... *}}<Styled${1:${TM_FILENAME_BASE}}/>",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Create a styled component and a react component wrapper"
+  },
+  "styledComponentReactComponent": {
+    "prefix": "stccr",
     "body": [
       "import React from \"react\"",
       "import styled from \"styled-components\"",
@@ -30,8 +46,9 @@
       "\t/* ... */",
       "`",
       "const ${1:${TM_FILENAME_BASE}} = (props) => {",
-      "\treturn <Styled${1:${TM_FILENAME_BASE}}>${0}<Styled${1:${TM_FILENAME_BASE}}/>",
+      "\treturn <Styled${1:${TM_FILENAME_BASE}} {...props}>${0:{/* ... *}}<Styled${1:${TM_FILENAME_BASE}}/>",
       "}",
+      "",
       "export default ${1:${TM_FILENAME_BASE}}"
     ],
     "description": "Create a styled component and a react component wrapper"
@@ -39,15 +56,43 @@
   "styledComponentProp": {
     "prefix": "stp",
     "body": [
-      "${(props) => props.${1}}"
+      "\\${(props) => props.${1}}"
     ],
     "description": "Use a prop in a styled component"
+  },
+    "styledComponentPropTernary": {
+    "prefix": "stpt",
+    "body": [
+      "\\${(props) => props.${1} ? ${2} : ${3}}"
+    ],
+    "description": "Use a prop in ternary"
+  },
+  "styledComponentPropOr": {
+    "prefix": "stpo",
+    "body": [
+      "\\${(props) => props.${1} || ${2}}"
+    ],
+    "description": "Use a prop in an OR"
   },
   "styledComponentPropDestructure": {
     "prefix": "stpd",
     "body": [
-      "${({${1:PropName}}) => ${1:PropName} }"
+      "\\${({${1:PropName}) => ${1:PropName}}"
     ],
     "description": "Use a prop in a styled component via destructuring assignment"
-  }
+  },
+  "styledComponentPropDestructureTernary": {
+    "prefix": "stpdt",
+    "body": [
+      "\\${({${1:PropName}) => ${1:PropName} ? ${2} : ${3}}"
+    ],
+    "description": "Use a prop in a ternary via destructuring assignment"
+  },
+  "styledComponentPropDestructureOR": {
+    "prefix": "stpdo",
+    "body": [
+      "\\${({${1:PropName}) => ${1:PropName} || ${2}}}"
+    ],
+    "description": "Use a prop in an OR via destructuring assignment"
+  },
 }
