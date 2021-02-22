@@ -15,10 +15,11 @@ Below is a list of all available snippets and the triggers of each one. The **�
 
 ### Imports
 
-| Trigger | Content                                                       |
-| ------: | ------------------------------------------------------------- |
-|  `stc→` | Styled component boilerplate                                  |
-| `stcr→` | Styled component boilerplate for styling a react component    |
-| `stcc→` | Create a styled component and a react component wrapper       |
-|  `stp→` | Use a prop in a styled component                              |
-| `stpd→` | Use a prop in a styled component via destructuring assignment |
+|  Trigger | Content                                                                      |
+| -------: | ---------------------------------------------------------------------------- |
+|   `stc→` | Styled component boilerplate                                                 |
+|  `stcr→` | Styled component boilerplate for styling a react component                   |
+|  `stcc→` | Create a styled component from html element and a react component wrapper    |
+| `stccr→` | Create a styled component from react component and a react component wrapper |
+|   `stp→` | Use a prop in a styled component                                             |
+|  `stpd→` | Use a prop in a styled component via destructuring assignment                |

@@ -21,7 +21,7 @@
     ],
     "description": "Styled Component boilerplate for styling a react component"
   },
-  "styledComponentIAO": {
+  "styledComponentReactComponent": {
     "prefix": "stcc",
     "body": [
       "import React from \"react\"",
