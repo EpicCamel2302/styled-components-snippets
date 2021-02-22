@@ -94,5 +94,5 @@
       "\\${({${1:PropName}) => ${1:PropName} || ${2}}}"
     ],
     "description": "Use a prop in an OR via destructuring assignment"
-  },
+  }
 }
