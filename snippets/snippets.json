@@ -1,4 +1,9 @@
 {
+  "importStyled": {
+    "prefix": "imst",
+    "body": "import styled from \"styled-components\"",
+    "description": "Import styled from Styled Components"
+  },
   "styledComponent": {
     "prefix": "stc",
     "body": [

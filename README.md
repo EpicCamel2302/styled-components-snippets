@@ -17,6 +17,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 
 |  Trigger | Content                                                                      |
 | -------: | ---------------------------------------------------------------------------- |
+|  `imst→` | Import styled from styled-components                                         |
 |   `stc→` | Styled component boilerplate                                                 |
 |  `stcr→` | Styled component boilerplate for styling a react component                   |
 |  `stcc→` | Create a styled component from html element and a react component wrapper    |
