@@ -34,7 +34,7 @@
       "}",
       "export default ${1:${TM_FILENAME_BASE}}"
     ],
-    "description": "Styled Component boilerplate for styling a react component"
+    "description": "Create a styled component and a react component wrapper"
   },
   "styledComponentProp": {
     "prefix": "stp",
